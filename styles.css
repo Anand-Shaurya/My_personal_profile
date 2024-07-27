@@ -12,13 +12,39 @@ header {
     padding: 1rem;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 section {
@@ -36,18 +62,6 @@ h1, h2 {
 ul {
     list-style: none;
     padding: 0;
-}
-
-.social-links {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.contact-links {
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }
 
 .social-links table,
@@ -80,4 +94,34 @@ ul {
     width: 20px;
     height: 20px;
     vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: flex;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-links table,
+    .contact-links table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-links table td,
+    .contact-links table td {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 }
