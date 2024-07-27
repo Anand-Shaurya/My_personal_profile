@@ -11,6 +11,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    position: relative;
 }
 
 .profile-pic {
@@ -35,4 +36,48 @@ h1, h2 {
 ul {
     list-style: none;
     padding: 0;
+}
+
+.social-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.contact-links {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.social-links table,
+.contact-links table {
+    border-spacing: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.button i,
+.custom-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.custom-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
